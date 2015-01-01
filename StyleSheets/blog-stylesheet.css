@@ -1,0 +1,36 @@
+
+#logo{
+	background: yellow;
+	border: 2px dotted blue;
+	width: 20%;
+	height: 200px;
+	float: left;
+	clear: right;
+}
+#btitle{
+	background: orange;
+	border: 2px dotted blue;
+	width: 79%;
+	height: 200px;
+	float: right;
+}
+#btext{
+	background: red;
+	border: 2px dotted blue;
+	float: left;
+	width: 75%;
+	height: 500px;
+	clear: both;	
+}
+#library{
+	background: blue;
+	border: 2px dotted blue;
+	float: right;
+	width: 24%;
+	height: 500px;
+}
+#bottom{
+	background: brown;
+	border: 2px dotted blue;
+	clear: both;
+}
