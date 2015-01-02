@@ -8,6 +8,10 @@ img {
 li {
     padding-bottom: 10px;
 }
+h1 {
+    padding-left: 1%;
+    margin-top: 0px;
+}
 #logo{
     background: grey;
     border: 2px solid black;
@@ -19,11 +23,9 @@ li {
 #btitle{
     background: orange;
     border: 2px solid black;
-    width: 69%;
+    width: 78%;
     height: 200px;
     float: right;
-    margin-left: 2%;
-    padding-left: 5%;
 }
 #btext{
     background: grey;
@@ -32,7 +34,7 @@ li {
     width: 70%;
     height: 500px;
     clear: both;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 20px;
     padding-left: 2%;
     padding-right: 2%;  
@@ -44,7 +46,7 @@ li {
     width: 20%;
     height: 500px;
     margin-left: 2%;
-    margin-top: 40px;
+    margin-top: 20px;
     padding-left: 3%
 }
 #bottom{
