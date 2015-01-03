@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ryan's Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="..\StyleSheets\blog-stylesheet.css">
+</head>
+<body>
+  <div id="logo">
+    <img src="http://imageshack.com/a/img905/1228/mtFE8L.jpg" />
+  </div>
+  <div id="btitle">
+    <h1 style="font-size: 48px">Ryan Immesberger's Technical Blog</h1>
+  </div>
+  <div id="btext">
+    <h3 style="text-decoration: underline">Margin, Padding, Border:</h3>
+    <p>
+      There are three concentric cushions around each one of your html elements. By elements I mean every obect on your html page; text, pictures, links, divs, tables... everything. Even if these objects are inside one-another they still maintain their own personal set of 3 cushions.<br /><br />
+      The most obvious of the three is border. Lets say your object is a beautiful painting. The border is the frame of the painting. Borders can have varying thickness, color, and in the world of html can be dashed, dotted, or even invisible. The border comes between the padding and the margin and is the only cushion of the three that has its own color property.<br /><br />
+      If the border is the frame of a painting then the padding is the white space photographers leave around their pictures inside a frame. The padding creates space between your objects content(text, image ,etc..) and the border. The padding does not have a color property, but it does have a width property. I found padding to be very useful in pushing text away from borders. *I want to include a special note: padding can push corresponding borders and margins outward. If you do not wish to increase the size of your borders and margins, alter the padding of the inner object ie:change the text padding rather than the div containing the text.<br /><br />
+      Last, but not least is margins. Margins are the outer most cushion. Margins are responsible for creating space between your objects. When you go to a museum paintings are spaced out on the wall. You can think of this space as the paintings margin area. Margins do not have a color property but they do have a width property. I find margins very useful for creating some space between your div boxes and tables.
+    </p>
+  </div>
+  <div id="library">
+    <h1 style="text-decoration: underline">Blogs:</h1>
+      <ul>
+        <li><a href="http://rimmesbe.github.io/blog/t1-git-blog.html">Technical blog 1</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c1-chefs-kitchen.html">Cultural blog 1</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t2-css-design.html">Technical blog 2</a></li>
+      </ul>
+  </div>
+  <div id="bottom">
+    <h1 style="text-decoration: underline; text-align: center">Contact:</h1>
+    <p style="text-align: center">
+      RyanImmesberger@gmail.com<br />
+      Twitter: @rimmesbe
+    </p>
+  </div>
+</body>
+</html>
