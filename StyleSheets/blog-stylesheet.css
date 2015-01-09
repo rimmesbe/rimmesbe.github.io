@@ -32,7 +32,7 @@ h1 {
     border: 2px solid black;
     float: left;
     width: 70%;
-    height: 500px;
+    /*height: 500px;*/
     clear: both;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -55,4 +55,8 @@ h1 {
     clear: both;
     margin-right: 10%;
     margin-left: 10%;
+}
+.array {
+    width: 50%;
+    height: 30%;
 }
