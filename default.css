@@ -1,6 +1,9 @@
 body {
 	background: black;
 }
+ul{
+	padding-left: 0px;
+}
 li {
 	padding-bottom: 10px;
 }
