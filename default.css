@@ -39,7 +39,7 @@ h1 {
 #projects {
 	background: rgb(7, 97, 161);
 	width: 20%;
-	height: 400px;
+	height: 450px;
 	border: 3px solid blue;
 	float: left;
 	margin-top: 20px;
@@ -49,10 +49,10 @@ h1 {
 #news {
 	background: rgb(7, 97, 161);
 	width: 52%;
-	height: 400px;
+	height: 450px;
 	border: 3px solid blue;
-	margin-left: 20px;
-	margin-right:auto;
+	margin-left: 1%;
+	margin-right:1%;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	display: inline-block;
