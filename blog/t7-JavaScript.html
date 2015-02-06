@@ -13,16 +13,15 @@
     <h1 style="font-size: 48px">Ryan Immesberger's Technical Blog</h1>
   </div>
   <div id="btext">
-    <h3 style="text-decoration: underline">Ruby Classes:</h3>
-    <h4>January 22, 2015</h4>
+    <h3 style="text-decoration: underline">JavaScript vs. Ruby</h3>
+    <h4>February 2, 2015</h4>
     <p>
-    I have heard the term 'blue prints' used many times to describe what classes are. So why swim upstream?
-    Lets take a look at this house class that I've created: <br /><br />
-    <img id="class_ex" src="../imgs/ruby_class_example.png" /><br /><br />
-    Let’s say a builder gets a contract to build 10 houses in a new neighborhood and all the houses are going to be the same. The builder would not tell the architect to create 10 separate blueprints, he would just use the same blueprint for each house.<br /><br />
-    In Ruby a class is the blueprint and the houses are objects.  A class in Ruby is a blueprint for creating a new type of object with specifically created methods and attributes.  For example when you create a new array, you are created a new object from the array class along with its array methods.<br /><br /> 
-    When a variable inside a class has a ‘@’ symbol in front of it, that is an instance variable. That variable can be used in any method definition, within the class. Without the ‘@’ symbol that variable only exists with the method in which it is defined. It should also be noted that these variables are created for instances of the class (the object) not the class itself.<br /><br />
-    Lastly I’ll mention the attr_reader, attr_writer, and attr_accessor special methods that can be used inside class definitions. These replace the “get” and “set” methods that are often created inside of class definitions to protect variable data. By separating “get” and “set” a user cannot accidentally change the value of a variable. Attr_reader simplifies the “get” method and attr_writer simplifies the “set” method. The attr_accessor is a combination of the previous two. Check out the example above for a visual representation.
+    Ruby and JavaScript are both programming languages. In this blog I will be going over some of their fundamental differences.<br /><br />  
+    In Ruby we have a ‘hash’, which is a type of data structure object not very different than an array. Unlike an array hashes are not indexed by number variables, instead they are given keyword variables to point to their data. <br /><br />
+    Now in JavaScript there are no “hash” objects, there are only objects. JavaScript objects look very much like Ruby hashes. Objects hold data about the object in a similar key to value structure, but in the JavaScript case the ‘key’ is called a property. These properties are connected to values that are packaged with the object.<br /><br />
+    But don’t objects get their properties from the class they were spawned from? That is the case in Ruby, but in JavaScript there are no classes. If you want to pump out multiple copies of the same object you would create a function that spawns copies of that object with the properties you want. You could also just create an instance of a brand new object directly, hard coding its properties right there.<br /><br />
+
+    Another difference you may be noticing about JavaScript compared to Ruby is that JavaScript does not have premade iterators. Ruby has a plethora of packaged loops that serve all different operations along with documents listing what they are and how they work. In JavaScript you have to create your own loops. JavaScript comes with three types of loops; while, do-while, and for. You are responsible for creating your own iterator variables and local variables for holding values.  Unfortunately there are no official JavaScript documents which list of all the different ways to use loops to manipulate data.
 
     </p>
   </div>
