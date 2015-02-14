@@ -7,16 +7,20 @@ h3 {
 }
 
 #title{
-  align: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 #sidebar {
+  border: 2px solid orange;
   width: 20%;
   float: left;
   position: fixed;
 }
 
 #content {
+  border: 2px solid orange;
   width: 78%;
   float: right;
 }
