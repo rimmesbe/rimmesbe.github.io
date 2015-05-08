@@ -1,0 +1,12 @@
+<h3>Projects:</h3>
+<ul>
+  <li><a href="https://github.com/rimmesbe/Barter">Barter</a></li>
+</ul>
+
+<h3>Recent Posts:</h3>
+
+<ul>
+  {% for post in site.posts limit: 5 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
