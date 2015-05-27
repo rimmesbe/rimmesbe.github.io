@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ryan's Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="..\StyleSheets\blog-stylesheet.css">
+</head>
+<body>
+  <div id="logo">
+    <img src="../imgs/RyanSitePhoto1.jpg" />
+  </div>
+  <div id="btitle">
+    <h1 style="font-size: 48px">Ryan Immesberger's Technical Blog</h1>
+  </div>
+  <div id="btext">
+    <h3 style="text-decoration: underline">Enumerable Method: Group_by</h3>
+    <h4>January 16, 2015</h4>
+    <p>
+    The Group_by method is an enumerable method that can be used on arrays or hashes. Group_by iterates through the array or hash and puts each element into a group based on the conditions in the block.<br /><br />
+    Array Example:<br />
+    <img class="array" src="../imgs/Group_by_array1.png" /><br />
+    In this example we are passing each element through a modulo 3, the remainder (0, 1, 2) are our groups. Each element will be placed into one of these new groups. These groups are hashes of arrays, meaning the hash key is the 'group name' and the elements of the group are inside a new array.<br /><br />
+    Hashes Example:<br />
+    <img class="array" src="../imgs/group_by_hash1.png" /><br />
+    In this example groups are created based on the 'value' element of each hash.<br /><br />
+    As you can see this method is very useful for organizing the data in your arrays and hashes. Another useful way to use this method is to create random groups. Example:<br />
+    <img class="array" src="../imgs/group_by_random1.png" /><br />
+    Running this code three time gives three different results.
+    </p>
+  </div>
+  <div id="library">
+    <h1 style="text-decoration: underline">Blogs:</h1>
+      <ul>
+        <li><a href="http://rimmesbe.github.io/blog/t1-git-blog.html">Git, Github, Version Control</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t2-css-design.html">Margins, Padding, Borders</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t3-arrays-hashes.html">Hashes Vs. Arrays</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t4-enumerable-methods.html">Method: group_by</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t5-ruby-classes.html">Ruby Classes</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t6-oop-concepts.html">Blocks, Procs, & Lambdas</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t7-JavaScript.html">Ruby vs. JavaScript</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t8-tech.html">Sorting</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c1-chefs-kitchen.html">Cultural Learning</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c3_thinking-style.html">Thinking Styles</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c4-tech-issues.html">Tech World: Drug Abuse</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c5-feedback.html">Pair Programming & Feedback</a></li> 
+        <li><a href="http://rimmesbe.github.io/blog/c6-stereotype-threat.html">Stereotype Threat</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c7-values.html">Self-Affirmation</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c8-conflict.html">Conflict</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c9-questions.html">Questions</a></li>
+        <li><a href="http://rimmesbe.github.io/GPS/gps1-2.html">GPS 1.2: Pair Programming</a></li> 
+        <li><a href="http://rimmesbe.github.io">Home</a></li>
+      </ul>
+  </div>
+  <div id="bottom">
+    <h1 style="text-decoration: underline; text-align: center">Contact:</h1>
+    <p style="text-align: center">
+      RyanImmesberger@gmail.com<br />
+      Twitter: @rimmesbe
+    </p>
+  </div>
+</body>
+</html>

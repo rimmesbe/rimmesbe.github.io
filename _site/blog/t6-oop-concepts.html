@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ryan's Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="..\StyleSheets\blog-stylesheet.css">
+</head>
+<body>
+  <div id="logo">
+    <img id="self" src="../imgs/RyanSitePhoto1.jpg" />
+  </div>
+  <div id="btitle">
+    <h1 style="font-size: 48px">Ryan Immesberger's Technical Blog</h1>
+  </div>
+  <div id="btext">
+    <h3 style="text-decoration: underline">OOP: Blocks, Procs, & Lambdas</h3>
+    <h4>January 29, 2015</h4>
+    <p>
+    First we’ll look at blocks(code blocks) since you need to understand them to understand procs and lambdas. Blocks follow a method call either in curly braces of a ‘do/end’ enclosure.<br /><br />
+    <img id="code_block_s" src="../imgs/t6-ex1.png" /><br /><br />
+    Not all methods have access to code blocks. The method must be able to yield. This means that inside the method definition there should be a ‘yield’ keyword which causes the flow to switch to the code block. After the code block is finished it returns back to the code following the ‘yield’.<br /><br />
+    <img id="code_block_b" src="../imgs/t6-ex2.png" /><br /><br />
+    A common mistake beginners make when looking at a method call with a code block is thinking that the code block is a type of argument.  This is incorrect, rather the block should be considered a method syntax instead.<br /><br />
+    Next we will look at procs. Procs provide a way to save a code block in a variable. Unlike blocks, procs are objects and thus have all the privileges of objects. Procs are called in place of blocks.<br /><br />
+    <img id="code_block_s" src="../imgs/t6-ex3.png" /><br /><br />
+    So now the code block really looks like an argument… but it’s not.  A proc is just a saved code block. Another way to write it would be:<br /><br />
+    <img id="code_block_s" src="../imgs/t6-ex4.png" /><br /><br />
+    Oooh that looks nice, and now it’s more clear that blocks are not arguments. It is also possible to call procs directly using the .call method. <br /><br />
+    <img id="code_block_b" src="../imgs/t6-ex5.png" /><br /><br />
+    Procs can also be used to convert symbols to procs.<br /><br />
+    <img id="code_block_s" src="../imgs/t6-ex7.png" /><br /><br />
+    Onto lambdas, which are very similar to procs. Here is how you create one:<br /><br />
+    <img id="code_block_s" src="../imgs/t6-ex8.png" /><br /><br />
+    It is called the same way you call a proc. There are two main differences between lambdas and procs.  The first difference is how they handle arguments.  Lambdas with return an error if the wrong number of arguments are given. Procs will insert nil values for the missing arguments. If too many arguments are provided for a proc, it will take the first of the arguments.<br /><br />
+    The second difference is that a when a proc finishes executing it will return out of the method it was called in(remember the yield?) without continuing the rest of the method code. Lambdas do not return out of the method upon completion and allow the method to finish the rest of its code. This is an important difference to remember, depending on what methods you’re using.<br /><br />
+    <img id="self" src="../imgs/t6-ex9.png" /><br /><br />
+
+    </p>
+  </div>
+  <div id="library">
+    <h1 style="text-decoration: underline">Blogs:</h1>
+      <ul>
+        <li><a href="http://rimmesbe.github.io/blog/t1-git-blog.html">Git, Github, Version Control</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t2-css-design.html">Margins, Padding, Borders</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t3-arrays-hashes.html">Hashes Vs. Arrays</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t4-enumerable-methods.html">Method: group_by</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t5-ruby-classes.html">Ruby Classes</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t6-oop-concepts.html">Blocks, Procs, & Lambdas</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t7-JavaScript.html">Ruby vs. JavaScript</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t8-tech.html">Sorting</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c1-chefs-kitchen.html">Cultural Learning</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c3_thinking-style.html">Thinking Styles</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c4-tech-issues.html">Tech World: Drug Abuse</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c5-feedback.html">Pair Programming & Feedback</a></li> 
+        <li><a href="http://rimmesbe.github.io/blog/c6-stereotype-threat.html">Stereotype Threat</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c7-values.html">Self-Affirmation</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c8-conflict.html">Conflict</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c9-questions.html">Questions</a></li>
+        <li><a href="http://rimmesbe.github.io/GPS/gps1-2.html">GPS 1.2: Pair Programming</a></li> 
+        <li><a href="http://rimmesbe.github.io">Home</a></li>
+      </ul>
+  </div>
+  <div id="bottom">
+    <h1 style="text-decoration: underline; text-align: center">Contact:</h1>
+    <p style="text-align: center">
+      RyanImmesberger@gmail.com<br />
+      Twitter: @rimmesbe
+    </p>
+  </div>
+</body>
+</html>

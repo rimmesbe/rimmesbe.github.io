@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Exo:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="StyleSheets/NewSiteStyleSheet.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </head>
+
+  <body style="background-color: #9694C8">
+    <nav class="navbar navbar-default" style="background-color: #BCBBFA; border-color: #9694C8">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+          <!-- <a class="navbar-brand" href="#">Welcome to...</a> -->
+          <div id="icons">
+            <a href="http://www.linkedin.com/in/ryanimmesberger">
+              <img class="icon" src="imgs/linkedin.png" />
+            </a>
+            <a href="https://www.facebook.com/ryan.immesberger">
+            <img class="icon" src="imgs/facebook.png" />
+            </a>
+            <a href="http://twitter.com/rimmesbe">
+              <img class="icon" src="imgs/twitter.png" />
+            </a>
+            <a href="http://google.com/+RyanImmesberger">
+              <img class="icon" src="imgs/googleplus.png" />
+            </a>
+            <a href="https://github.com/rimmesbe">
+              <img class="icon" src="imgs/github.png" />
+            </a>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+   <div class="container">    
+    <div class="row">
+      <div class="col-md-3 borders" style="background-color:#9694C8;">
+       <div id="myPhoto" class="borders">
+        <img src="imgs/RyanSitePhoto.jpg" id="selfie" class="img-circle" class="img-responsive" />
+       </div>
+      </div>
+      <div class="col-md-9 backdrop borders" style="margin-bottom: 20px">  
+        <div id="header" class="jumbotron" style="background-color: #BCB3C0; padding-left: 20px">
+          <h1 style="font-family: 'Exo', sans-serif; color: rgb(5, 0, 37)">Ryan's Developer Dungeon</h1>
+          <p style="font-family: 'Exo'">...My journey to becoming a Web Devloper</p>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div id="projects" class="backdrop borders">
+          <h3 class="divHeaders oswald" >Projects:</h3>
+          <ul class="nav nav-pills nav-stacked">
+            <li><a class="boldText" href="http://rimmesbe.github.io/GPS/gps1-2.html"><span class="glyphicon glyphicon-link"></span> GPS 1.2: Pair Programming</a></li>
+            <li><a class="boldText" href="http://rimmesbe.github.io/cheat-sheet.html"><span class="glyphicon glyphicon-link"></span> Ruby Enumerable Cheat Sheet</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6" style="padding-left: 0px">
+        <div id="news" class="backdrop borders">
+          <h3 class="divHeaders oswald">News:</h3><br />
+          <p class="paragraph">Welcome to my new website, using bootstrap.<br />.<br /><span class="glyphicon glyphicon-certificate"></span>Dev Bootcamp onsite start date: February 23, 2015<span class="glyphicon glyphicon-certificate"></span></p><br /><br />
+          <img class="ninja img-rounded" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPJjFg7xAtts_sRuNx9RWtPAeSxbUbajRqY-PD4_AeIcVH9U-Uug" alt="ninja hacker">
+        </div>
+      </div>
+      <div class="col-md-3" style="padding: 0px">
+        <div id="blogs" class="backdrop borders">
+          <h3 class="divHeaders oswald">Blogs:</h3>
+          <div class="dropdown bloglist">
+            <button class="btn btn-default btn-lg dropdown-toggle btn-block btn-danger blkText" type="button" id="menu1" data-toggle="dropdown">Technical Blogs
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu uList" role="menu" aria-labelledby="menu1">
+              <li class="list" role="presentation"><a style="font-weight: bold" role="menuitem" tabindex="-1" href="http://rimmesbe.github.io/blog/t1-git-blog.html">Git, Github, Version Control</a></li>
+              <li class="list" role="presentation"><a style="font-weight: bold" role="menuitem" tabindex="-1" href="http://rimmesbe.github.io/blog/t2-css-design.html">Margins, Padding, Borders</a></li>
+              <li class="list" role="presentation"><a style="font-weight: bold" role="menuitem" tabindex="-1" href="http://rimmesbe.github.io/blog/t3-arrays-hashes.html">Hashes Vs. Arrays</a></li>
+              <li class="list" role="presentation"><a style="font-weight: bold" role="menuitem" tabindex="-1" href="http://rimmesbe.github.io/blog/t4-enumerable-methods.html">Method: group_by</a></li>
+              <li class="list" role="presentation"><a style="font-weight: bold" role="menuitem" tabindex="-1" href="http://rimmesbe.github.io/blog/t5-ruby-classes.html">Ruby Classes</a></li>
+              <li class="list" role="presentation"><a style="font-weight: bold" role="menuitem" tabindex="-1" href="http://rimmesbe.github.io/blog/t6-oop-concepts.html">Blocks, Procs, & Lambdas</a></li>
+              <li class="list" role="presentation"><a style="font-weight: bold" role="menuitem" tabindex="-1" href="http://rimmesbe.github.io/blog/t7-JavaScript.html">Ruby vs. JavaScript</a></li>
+              <li class="list" role="presentation"><a style="font-weight: bold" role="menuitem" tabindex="-1" href="http://rimmesbe.github.io/blog/t8-tech.html">Sorting</a></li>
+            </ul>
+          </div>
+          <div class="dropdown bloglist">
+            <button class="btn btn-default btn-lg dropdown-toggle btn-block btn-danger blkText" type="button" id="menu1" data-toggle="dropdown">Cultural Blogs
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu uList" role="menu" aria-labelledby="menu1">
+              <li class="list" role="presentation"><a style="font-weight: bold" role="menuitem" tabindex="-1" href="http://rimmesbe.github.io/blog/c1-chefs-kitchen.html">Cultural Learning</a></li>
+              <li class="list" role="presentation"><a style="font-weight: bold" role="menuitem" tabindex="-1" href="http://rimmesbe.github.io/blog/c3_thinking-style.html">Thinking Styles</a></li>
+              <li class="list" role="presentation"><a style="font-weight: bold" role="menuitem" tabindex="-1" href="http://rimmesbe.github.io/blog/c4-tech-issues.html">Tech World: Drug Abuse</a></li>
+              <li class="list" role="presentation"><a style="font-weight: bold" role="menuitem" tabindex="-1" href="http://rimmesbe.github.io/blog/c5-feedback.html">Pair Programming & Feedback</a></li>
+              <li class="list" role="presentation"><a style="font-weight: bold" role="menuitem" tabindex="-1" href="http://rimmesbe.github.io/blog/c6-stereotype-threat.html">Stereotype Threat</a></li>
+              <li class="list" role="presentation"><a style="font-weight: bold" role="menuitem" tabindex="-1" href="http://rimmesbe.github.io/blog/c7-values.html">Self-Affirmation</a></li>
+              <li class="list" role="presentation"><a style="font-weight: bold" role="menuitem" tabindex="-1" href="http://rimmesbe.github.io/blog/c8-conflict.html">Conflict</a></li>
+              <li class="list" role="presentation"><a style="font-weight: bold" role="menuitem" tabindex="-1" href="http://rimmesbe.github.io/blog/c9-questions.html">Questions</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <div class="container" style="padding-right: 0px">
+    <div class="row">
+      <div  class="col-md-12" style="padding: 0px">
+        <div class="backdrop borders">
+          <h2 class="text-center oswald" style="margin-top: 0px">Contact:</h2>
+          <p class="text-center">RyanImmesberger@gmail.com</p>
+          <p class="text-center" style="padding-bottom: 10px">Twitter: @rimmesbe</p>
+        </div>
+      </div>
+    </div>
+   </div>   
+  </body>
+</html>
+
+
+
+<!-- Old Site --> 
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Ryan's Homepage</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="default.css" />
+  </head>
+  <body>
+      <div id="logo">
+        <img id="selfie" src="imgs/blueman.jpg" alt="selfie"/>
+      </div>
+      <div id="header">
+        <h1><strong>Ryan's Homepage</strong></h1>
+        <div id="icons">
+          <a href="http://www.linkedin.com/in/ryanimmesberger">
+            <img class="icon" src="imgs/linkedin.png" />
+          </a>
+          <a href="https://www.facebook.com/ryan.immesberger">
+            <img class="icon" src="imgs/facebook.png" />
+          </a>
+          <a href="http://twitter.com/rimmesbe">
+            <img class="icon" src="imgs/twitter.png" />
+          </a>
+          <a href="http://google.com/+RyanImmesberger">
+            <img class="icon" src="imgs/googleplus.png" />
+          </a>
+          <a href="https://github.com/rimmesbe">
+            <img class="icon" src="imgs/github.png" />
+          </a>
+        </div>
+      </div>
+  	  <div id="projects">
+  	  	<h2>Projects</h2>
+  	  	<p>
+  	  	  <a href="http://rimmesbe.github.io/cheat-sheet.html">Ruby Enumerable Cheat Sheet</a>
+  	  	</p>
+  	  </div>
+      <div id="blog">
+        <h2>Blogs</h2>
+        <ul>
+          <li><a href="http://rimmesbe.github.io/blog/t1-git-blog.html">Git, Github, Version Control</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t2-css-design.html">Margins, Padding, Borders</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t3-arrays-hashes.html">Hashes Vs. Arrays</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t4-enumerable-methods.html">Method: group_by</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t5-ruby-classes.html">Ruby Classes</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t6-oop-concepts.html">Blocks, Procs, & Lambdas</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t7-JavaScript.html">Ruby vs. JavaScript</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t8-tech.html">Sorting</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c1-chefs-kitchen.html">Cultural Learning</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c3_thinking-style.html">Thinking Styles</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c4-tech-issues.html">Tech World: Drug Abuse</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c5-feedback.html">Pair Programming & Feedback</a></li> 
+        <li><a href="http://rimmesbe.github.io/blog/c6-stereotype-threat.html">Stereotype Threat</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c7-values.html">Self-Affirmation</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c8-conflict.html">Conflict</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c9-questions.html">Questions</a></li>
+        <li><a href="http://rimmesbe.github.io/GPS/gps1-2.html">GPS 1.2: Pair Programming</a></li> 
+        
+        </ul>
+      </div>
+  	  <div id="news">
+  	  	<h2>News</h2>
+  	  	<p>
+  	  	  Latest Blogs:<br /><br />
+          <a href="http://rimmesbe.github.io/blog/t8-tech.html">Sorting</a><br /><br />
+          <a href="http://rimmesbe.github.io/blog/c8-conflict.html">Conflict</a><br /><br />
+          <a href="http://rimmesbe.github.io/blog/c9-questions.html">Questions</a>
+  	  	</p>
+  	  </div>
+  	  <div id="contact">
+  	  	<h2>Contact Info:</h2>
+  	  	<p>
+  	  	  RyanImmesberger@gmail.com<br /><br />
+          Twitter: @rimmesbe
+  	  	</p>
+  	  </div>
+  </body>
+</html> -->

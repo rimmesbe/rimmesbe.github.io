@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ryan's Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="..\StyleSheets\blog-stylesheet.css">
+</head>
+<body>
+  <div id="logo">
+    <img src="../imgs/RyanSitePhoto1.jpg" />
+  </div>
+  <div id="btitle">
+    <h1 style="font-size: 48px">Ryan Immesberger's Technical Blog</h1>
+  </div>
+  <div style="height: 600px;" id="btext">
+    <h3 style="text-decoration: underline">Margin, Padding, Border:</h3>
+    <h4>December 30, 2014</h4>
+    <p>
+      There are three concentric cushions around each one of your html elements. By elements I mean every obect on your html page; text, pictures, links, divs, tables... everything. Even if these objects are inside one-another they still maintain their own personal set of 3 cushions.<br /><br />
+      The most obvious of the three is border. Lets say your object is a beautiful painting. The border is the frame of the painting. Borders can have varying thickness, color, and in the world of html can be dashed, dotted, or even invisible. The border comes between the padding and the margin and is the only cushion of the three that has its own color property.<br /><br />
+      If the border is the frame of a painting then the padding is the white space photographers leave around their pictures inside a frame. The padding creates space between your objects content(text, image ,etc..) and the border. The padding does not have a color property, but it does have a width property. I found padding to be very useful in pushing text away from borders. *I want to include a special note: padding can push corresponding borders and margins outward. If you do not wish to increase the size of your borders and margins, alter the padding of the inner object ie:change the text padding rather than the div containing the text.<br /><br />
+      Last, but not least is margins. Margins are the outer most cushion. Margins are responsible for creating space between your objects. When you go to a museum paintings are spaced out on the wall. You can think of this space as the paintings margin area. Margins do not have a color property but they do have a width property. I find margins very useful for creating some space between your div boxes and tables.<br /><br />
+      <img id="pic" src="../imgs/borders.png" />
+    </p>
+    
+  </div>
+  <div style="height: 600px;" id="library">
+    <h1 style="text-decoration: underline">Blogs:</h1>
+      <ul>
+        <li><a href="http://rimmesbe.github.io/blog/t1-git-blog.html">Git, Github, Version Control</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t2-css-design.html">Margins, Padding, Borders</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t3-arrays-hashes.html">Hashes Vs. Arrays</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t4-enumerable-methods.html">Method: group_by</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t5-ruby-classes.html">Ruby Classes</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t6-oop-concepts.html">Blocks, Procs, & Lambdas</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t7-JavaScript.html">Ruby vs. JavaScript</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t8-tech.html">Sorting</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c1-chefs-kitchen.html">Cultural Learning</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c3_thinking-style.html">Thinking Styles</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c4-tech-issues.html">Tech World: Drug Abuse</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c5-feedback.html">Pair Programming & Feedback</a></li> 
+        <li><a href="http://rimmesbe.github.io/blog/c6-stereotype-threat.html">Stereotype Threat</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c7-values.html">Self-Affirmation</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c8-conflict.html">Conflict</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c9-questions.html">Questions</a></li>
+        <li><a href="http://rimmesbe.github.io/GPS/gps1-2.html">GPS 1.2: Pair Programming</a></li> 
+        <li><a href="http://rimmesbe.github.io">Home</a></li>
+      </ul>
+  </div>
+  <div id="bottom">
+    <h1 style="text-decoration: underline; text-align: center">Contact:</h1>
+    <p style="text-align: center">
+      RyanImmesberger@gmail.com<br />
+      Twitter: @rimmesbe
+    </p>
+  </div>
+</body>
+</html>

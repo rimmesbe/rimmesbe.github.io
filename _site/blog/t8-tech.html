@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ryan's Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="..\StyleSheets\blog-stylesheet.css">
+</head>
+<body>
+  <div id="logo">
+    <img src="../imgs/RyanSitePhoto1.jpg" />
+  </div>
+  <div id="btitle">
+    <h1 style="font-size: 48px">Ryan Immesberger's Technical Blog</h1>
+  </div>
+  <div id="btext">
+    <h3 style="text-decoration: underline">Sorting</h3>
+    <h4>February 15, 2015</h4>
+    <p>
+    Sorting is a very common and useful method for organizing data. It allows users to access information much quicker (such as binary searches) and is crucial for other types of data manipulation. There are many different types of sorting algorithms, with different advantages and disadvantages.<br /><br />
+    The most basic type of sort method is the bubble sort. I will describe it with a real life example:<br /><br />
+    Imagine you are in a straight line of people. You are all tasked with organizing yourselves into alphabetical order. However you are only allowed to speak if you are holding the talking stick, and you are only allowed to talk to the person directly behind you. To get this done the person in front of the line would start with the talking stick and ask the person behind them his/her name. If the person’s name starts with an earlier letter then they switch positions and the person with the stick holds onto it. Otherwise the person does not switch positions and passes the talking stick to the next person in line. This method continues until the end of the line, and then the talking stick is passed back to the person in front. This loop may have to repeat many times to get a fully sorted line, especially with a large number of people. As you can probably tell this is a very slow sorting method.<br /><br />
+    Now let me describe a much quicker sorting method called merge sort. Merge sort is much quicker, but also requires more memory. Merge sorting is similar to binary searching in the sense that it takes a divide and conquer approach. Let’s go back to that line of unsorted people:<br /><br />
+    This time there is no talking stick, but there is a second empty line. The populated line is divided into two sections, the front and the back. It is then divided again, and again, and again until the people are in pairs. Then each pair is responsible for sorting themselves which is pretty easy considering there are only two people. However they can’t just swap positions (can’t swap memory addresses) so they must step onto the new line in proper order. All the pairs must do this. Once these pairs are sorted and on the new line they then pair off with the sorted pair next to them. Now we can abuse the fact that these pairs are already sorted to more easily combine them back to the original line as a group of 4 sorted people. This is done by comparing the first person in each pair/group and placing the lower lettered person first and then comparing the remaining person to the next person in the other pair/group. Now we have groups of 4 people in order. This continues until the entire line is sorted.
+    </p>
+  </div>
+  <div id="library">
+    <h1 style="text-decoration: underline">Blogs:</h1>
+      <ul>
+        <li><a href="http://rimmesbe.github.io/blog/t1-git-blog.html">Git, Github, Version Control</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t2-css-design.html">Margins, Padding, Borders</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t3-arrays-hashes.html">Hashes Vs. Arrays</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t4-enumerable-methods.html">Method: group_by</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t5-ruby-classes.html">Ruby Classes</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t6-oop-concepts.html">Blocks, Procs, & Lambdas</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t7-JavaScript.html">Ruby vs. JavaScript</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/t8-tech.html">Sorting</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c1-chefs-kitchen.html">Cultural Learning</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c3_thinking-style.html">Thinking Styles</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c4-tech-issues.html">Tech World: Drug Abuse</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c5-feedback.html">Pair Programming & Feedback</a></li> 
+        <li><a href="http://rimmesbe.github.io/blog/c6-stereotype-threat.html">Stereotype Threat</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c7-values.html">Self-Affirmation</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c8-conflict.html">Conflict</a></li>
+        <li><a href="http://rimmesbe.github.io/blog/c9-questions.html">Questions</a></li>
+        <li><a href="http://rimmesbe.github.io/GPS/gps1-2.html">GPS 1.2: Pair Programming</a></li> 
+        <li><a href="http://rimmesbe.github.io">Home</a></li>
+      </ul>
+  </div>
+  <div id="bottom">
+    <h1 style="text-decoration: underline; text-align: center">Contact:</h1>
+    <p style="text-align: center">
+      RyanImmesberger@gmail.com<br />
+      Twitter: @rimmesbe
+    </p>
+  </div>
+</body>
+</html>
