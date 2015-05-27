@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Ryan Immesberger</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web Developer">
+
+    <link rel="stylesheet" type="text/css" href="/css/custom_style.css">
+    <link href='http://fonts.googleapis.com/css?family=Play:700' rel='stylesheet' type='text/css'>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        padding-top: 60px;
+      }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/"><h3 id="site-name">Ryan Immesberger</h3></a>
+            <div id="icons">
+              <a href="http://www.linkedin.com/in/ryanimmesberger">
+                <img class="icon" src="/imgs/linkedin.png" />
+              </a>
+              <a href="http://twitter.com/rimmesbe">
+                <img class="icon" src="/imgs/twitter.png" />
+              </a>
+              <a href="http://google.com/+RyanImmesberger">
+                <img class="icon" src="/imgs/googleplus.png" />
+              </a>
+              <a href="https://github.com/rimmesbe">
+                <img class="icon" src="/imgs/github.png" />
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div  class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img id="circuit" src="/imgs/parasal.jpg" alt="circuit">
+          <div id="create-div" class="carousel-caption">
+            <h1 id="create">Create</h1>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="/imgs/RyanToronto.jpg" alt="Toronto">
+          <div id="about-div" class="carousel-caption">
+            <h1 id="about">About Me</h1>
+            <p id="about-p">I am a Web Developer and a life long learner who is always seeking to expand my knowledge base. I am a creative thinker and I like solving interesting problems. My focus languages are Ruby on Rails, Javascript, HTML, CSS with some SQL and Angular JS experience. I practice Object Oriented Design, Agile Development, Version Control with some TDD experience.
+            </p>
+          </div>
+        </div>
+
+        <div class="item">
+          <a href="https://github.com/rimmesbe/Barter">
+            <img src="/imgs/Barter.png" alt="Barter">
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="icon-next"></span>
+      </a>
+    </div>
+
+    <div class="container">
+<div class="row">
+    <div class="col-md-8">
+      <h1 id="blog">Blogs:</h1>
+        <h1>Sorting</h1>
+
+<h3>February 15, 2015</h3>
+
+
+    <p>Sorting is a very common and useful method for organizing data. It allows users to access information much quicker (such as binary searches) and is crucial for other types of data manipulation. There are many different types of sorting algorithms, with different advantages and disadvantages.</p>
+
+    <p>The most basic type of sort method is the bubble sort. I will describe it with a real life example:</p>
+
+    <p>Imagine you are in a straight line of people. You are all tasked with organizing yourselves into alphabetical order. However you are only allowed to speak if you are holding the talking stick, and you are only allowed to talk to the person directly behind you. To get this done the person in front of the line would start with the talking stick and ask the person behind them his/her name. If the person’s name starts with an earlier letter then they switch positions and the person with the stick holds onto it. Otherwise the person does not switch positions and passes the talking stick to the next person in line. This method continues until the end of the line, and then the talking stick is passed back to the person in front. This loop may have to repeat many times to get a fully sorted line, especially with a large number of people. As you can probably tell this is a very slow sorting method.</p>
+
+    <p>Now let me describe a much quicker sorting method called merge sort. Merge sort is much quicker, but also requires more memory. Merge sorting is similar to binary searching in the sense that it takes a divide and conquer approach. Let’s go back to that line of unsorted people:</p>
+
+    <p>This time there is no talking stick, but there is a second empty line. The populated line is divided into two sections, the front and the back. It is then divided again, and again, and again until the people are in pairs. Then each pair is responsible for sorting themselves which is pretty easy considering there are only two people. However they can’t just swap positions (can’t swap memory addresses) so they must step onto the new line in proper order. All the pairs must do this. Once these pairs are sorted and on the new line they then pair off with the sorted pair next to them. Now we can abuse the fact that these pairs are already sorted to more easily combine them back to the original line as a group of 4 sorted people. This is done by comparing the first person in each pair/group and placing the lower lettered person first and then comparing the remaining person to the next person in the other pair/group. Now we have groups of 4 people in order. This continues until the entire line is sorted.
+    </p>
+    </div>
+    <div class="col-md-4">
+        <h2><a href="https://resume.creddle.io/resume/dvmcjez43ob" style="text-decoration: underline">Resume</a></h2>
+<h3>Projects:</h3>
+<ul>
+  <li><a href="https://github.com/rimmesbe/Barter">Barter</a></li>
+</ul>
+
+<h3>Recent Posts:</h3>
+
+<ul>
+  
+    <li><a href="/2015/02/15/sorting/">Sorting</a></li>
+  
+    <li><a href="/2015/01/29/Blocks-Procs-Lambdas/">Blocks, Procs, & Lambdas</a></li>
+  
+    <li><a href="/2015/01/16/Enumerable-Method-GroupBy/">Enumerable Method Group_by</a></li>
+  
+    <li><a href="/2014/12/30/Margin-Padding-Border/">Margin, Padding, Border</a></li>
+  
+    <li><a href="/2014/12/24/git-github-version-control/">Git, Github, and Version Control</a></li>
+  
+</ul>
+    </div>
+</div>
+
+    </div>
+      <div id="contact">
+        <img src="/imgs/contact.png" alt="contact" />
+      </div>
+  </body>
+</html>
