@@ -1,50 +1,147 @@
----
-layout: default
----
-
-{% for post in paginator.posts %}
-  <div class="row">
-    <div class="col-md-12">
-      <h2>{{ post.title }}</h2>
-      <h4>{{ post.date | date_to_long_string }}</h4>
-      <p>
-        <a href="{{ post.url }}">Read Post</a>
-      </p>
-    </div>
-  </div>
-{% endfor %}
-
-<div class="row">
-  <div class="col-md-12">
-    <div class="pagination">
-      <ul>
-        {% if paginator.previous_page %}
-          {% if paginator.previous_page == 1 %}
-            <li><a href="/">Prev</a></li>
-          {% else %}
-            <li><a href="/page{{ paginator.previous_page }}">Prev</a></li>
-          {% endif %}
-        {% else %}
-          <li><span class="disabled">Prev</span></li>
-        {% endif %}
-        {% if paginator.page == 1 %}
-          <li><span class="active">1</span></li>
-        {% else %}
-          <li><a href="/">1</a></li>
-        {% endif %}
-        {% for count in (2..paginator.total_pages) %}
-          {% if count == paginator.page %}
-            <li><span class="active">{{ count }}</span></li>
-          {% else %}
-            <li><a href="/page{{ count }}">{{ count }}</a></li>
-          {% endif %}
-        {% endfor %}
-        {% if paginator.next_page %}
-          <li><a href="/page{{ paginator.next_page }}">Next</a></li>
-        {% else %}
-          <li><span class="disabled">Next</span></li>
-        {% endif %}
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryan Immesberger's Site</title>
+    <link rel="stylesheet" href="css/application.css" />
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Courgette|Vidaloka|Bad+Script|Fugaz+One|Audiowide|Jura:400,600|Contrail+One|Megrim' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <div class="fixed">
+      <ul class="side-nav">
+        <li><a class="icons" href="http://www.linkedin.com/in/ryanimmesberger"><img src="img/linkedin.png"></a></li>
+        <li><a class="icons" href="http://twitter.com/rimmesb"><img src="img/twitter.png"></a></li>
+        <li><a class="icons" href="http://google.com/+RyanImmesberger"><img src="img/googleplus.png"></a></li>
+        <li><a class="icons" href="https://github.com/rimmesbe"><img src="img/github.png"></a></li>
+        <li><a class="icons" href="https://resume.creddle.io/resume/dvmcjez43ob"><span data-tooltip aria-haspopup="true" class="has-tip [tip-left]" title="RESUME"><img src="img/R.jpg"></span></a></li>
       </ul>
     </div>
-  </div>
-</div>
+
+    <div class="row no-margin" id="skrollr-body">
+      <div class="large-12 columns no-padding"
+        <div id="main-img-div" data-0="background-position:0px 0px;" data-150="background-position:0px -280px;">
+          <div class="row">
+            <div class="large-12 columns no-padding">
+              <h1 class="title-text">Create...</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-11 large-offset-1 columns no-padding">
+              <h1 class="title-text" data-0="opacity:.5; padding-left:0px;" data-75="opacity:1; padding-left:250px;">Things...</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-10 large-offset-2 columns no-padding">
+              <h1 class="title-text" data-0="opacity:.3; padding-left:0px;" data-125="opacity:1; padding-left:450px;">That...</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-9 large-offset-3 columns no-padding">
+              <h1 class="title-text" data-0="opacity:.1; padding-left:0px; text-shadow: 2px 2px black;" data-200="opacity:1; padding-left:550px;">Sore.</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <h1 class="center-text section-title" data-0="opacity: 0" data-350="opacity: 1" data-650="opacity: 0">Projects</h1>
+      </div>
+    </div>
+    <hr />
+
+    <!-- oasis project -->
+    <div class="row">
+      <div class="large-7 medium-7 columns">
+        <a href="https://oasismindbodyskin.com" class="button">Live Site</a>
+        <p>Oasis Mind Body and Skin is a private business that provides massage and facial services. This site provides service information, pricing, availability, as well as direct email support.</p>
+        <p>This site was built with the foundation framework. I also uses JQuery form validator as well as a custom php form validator for email form. Site uses Media queries to create a fully responsive experience.</p>
+      </div>
+
+      <div class="large-5 medium-5 columns">
+        <img src="img/Oasis-project.png" alt="Oasis">
+      </div>
+    </div>
+    <hr />
+
+    <!-- Barter project -->
+    <div class="row">
+      <div class="large-4 medium-4 columns">
+        <img src="img/Barter-image.png" alt="Barter">
+      </div>
+
+      <div class="large-8 medium-8 columns">
+        <a href="https://barter-hub.herokuapp.com" class="button">Live Site</a>
+        <a href="https://github.com/rimmesbe/Barter" class="button info">Source Code</a>
+        <p>Barter is a social network created for the purpose of trading talents. Two users make an agreement to trade their talents at a mutually agreeable time. "You teach me, I'll teach you." This app has a Ruby on Rails backend with a Angular JS front end. It also makes use of Amazon s3 databases for smooth streaming in app videos.</p>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Recipe book project -->
+    <div class="row">
+      <div class="large-7 medium-7 columns">
+        <a href="https://the-recipe-book.herokuapp.com/" class="button">Live Site</a>
+        <a href="https://github.com/rimmesbe/RecipeBook" class="button info">Source Code</a>
+        <p>The Recipe Book is a site where friends and family can go to share their recipes. The restful api allows people to create a user account and started adding, deleting, and editing their recipes.</p>
+        <p>This site was built with Ruby on Rails. It uses the Bootstrap framework for the front end as well as some custom JQuery animations. AJAX is used on the recipe creation page.</p>
+      </div>
+
+      <div class="large-5 medium-5 columns">
+        <img src="img/Recipe-image.png" alt="Recipe Book">
+      </div>
+    </div>
+    <hr />
+
+    <!-- about section -->
+    <div class="row">
+      <div class="large-4 medium-4 columns">
+        <img id="my-headshot" src="img/RyanImmesberger.jpg">
+      </div>
+
+      <div class="large-8 medium-8 columns">
+        <h1 class="center-text section-title">About</h1>
+        <p>I am a Web Developer and a life long learner who is always seeking to expand my knowledge base. I am a creative thinker and I like solving interesting problems. My focus languages are Ruby on Rails, Javascript, HTML, CSS with some SQL and Angular JS experience. I practice Object Oriented Design, Agile Development, Version Control with TDD experience.</p>
+        <p>-Ryan Immesberger</p>
+      </div>
+    </div>
+    <hr style="margin-bottom: 0em" />
+
+    <div class="row no-margin">
+      <div class="large-12 medium-12 columns no-padding" id="footer-img-div">
+        <h1 class="center-text section-title vidaloka-text" style="color:#008CBA;">Thanks for visiting</h1>
+        <div class="row top-padding">
+          <div class="large-5 medium-5 columns">
+            <ul class="float-right">
+              <li ><h3><a href="https://resume.creddle.io/resume/dvmcjez43ob">Resume</a></h3></li>
+              <li><h3><span data-tooltip aria-haspopup="true" class="has-tip" style="color:#008CBA;" title="RyanImmesberger@gmail.com">Email</span></h3></li>
+              <li><h3><a href="http://google.com/+RyanImmesberger">Google+</a></h3></li>
+            </ul>
+          </div>
+          <div class="large-5 medium-5 columns">
+            <ul class="float-left">
+              <li><h3><a href="http://www.linkedin.com/in/ryanimmesberger">Linkedin</a></h3></li>
+              <li><h3><a href="https://github.com/rimmesbe">Github</a></h3></li>
+              <li><h3><a href="http://twitter.com/rimmesbe">Twitter</a></h3></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script type="text/javascript" src="js/skrollr.min.js"></script>
+    <script type="text/javascript">
+      var s = skrollr.init();
+    </script>
+  </body>
+</html>
