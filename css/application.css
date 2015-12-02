@@ -1,3 +1,7 @@
+ul{
+  padding-bottom: 0px;
+}
+
 .center-text {
   text-align: center;
 }
@@ -9,6 +13,10 @@
 .row.no-margin {
   margin: 0px;
   max-width: 100%;
+}
+
+.no-margin{
+  margin: 0px;
 }
 
 .float-right {
@@ -26,6 +34,10 @@ h1.big-text {
 
 .section-title {
   font-family: 'Megrim', cursive;
+}
+
+.blue-text {
+  color: #008CBA;
 }
 
 #my-headshot {
