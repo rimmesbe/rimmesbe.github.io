@@ -53,10 +53,6 @@ h1.big-text {
       margin-top: 20px;
     }
 
-    div.fixed {
-      left: -5%;
-    }
-
     #main-img-div {
       background-image: url("../img/parasal.jpg");
       background-attachment: fixed;
