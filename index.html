@@ -1,155 +1,130 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ryan Immesberger's Site</title>
-    <link rel="stylesheet" href="css/application.css" />
-    <link rel="stylesheet" href="css/foundation.css" />
-    <script src="js/vendor/modernizr.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Vidaloka|Megrim' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ryan's Dev Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/stylesheets/normalize.css">
+    <link rel="stylesheet" href="./resources/stylesheets/style.css">
   </head>
   <body>
 
-    <div id="skrollr-body" style="overflow: hidden;">
-      <!-- nav bar -->
-      <div class="fixed">
-        <ul class="side-nav">
-          <li><a class="icons" href="http://www.linkedin.com/in/ryanimmesberger"><img src="img/linkedin.png"></a></li>
-          <li><a class="icons" href="http://twitter.com/rimmesb"><img src="img/twitter.png"></a></li>
-          <li><a class="icons" href="http://google.com/+RyanImmesberger"><img src="img/googleplus.png"></a></li>
-          <li><a class="icons" href="https://github.com/rimmesbe"><img src="img/github.png"></a></li>
-        </ul>
-      </div>
+    <section class="banner" role="banner">
+      <h1 class="banner-header">Create...</h1>
+      <h1 class="banner-header">Things...</h1>
+      <h1 class="banner-header">That...</h1>
+      <h1 class="banner-header">Sore</h1>
+    </section>
 
-      <div class="row no-margin">
-        <div class="large-12 columns no-padding" id="img-column">
-          <div id="main-img-div" data-0="background-position:0px 0px;" data-150="background-position:0px -280px;">
-            <div class="row">
-              <div class="large-12 columns no-padding">
-                <h1 class="title-text">Create...</h1>
+    <header>
+      <nav>
+        <a class="nav-link" href="#Project-section">Projects</a>
+        <a data-scroll class="nav-link" href="#About-section">About</a>
+        <a class="nav-link" href="#Contact-section">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="Project-section" role="region" aria-labelledby="Project-header">
+        <h2 id="Project-header" class="section-header">Projects</h2>
+
+        <div class="projects">
+          <div id="Oasis-MBS" class="project">
+            <div class="project-text">
+              <p>Oasis Mind Body and Skin is a private business that provides massage and facial services. This site provides service information, pricing, availability, as well as direct email support.
+              <br>
+              This site was built with the foundation framework. I also uses JQuery form validator as well as a custom php form validator for email form. Site uses Media queries to create a fully responsive experience.
+              </p>
+              <a class="project-link__SRC" href="https://github.com/rimmesbe/TrinityFusion_site">Source Code</a>
+            </div>
+            <a class="project-link__LIVE" href="https://rimmesbe.github.io/TrinityFusion_site/massage_and_facials/">
+              <div class="project-img">
+                <img src="./resources/images/Oasis-image.png" alt="Spa Scene, Oasis Mind Body Skin landing page">
               </div>
-            </div>
-            <div class="row">
-              <div class="large-11 large-offset-1 columns no-padding">
-                <h1 class="title-text" data-0="opacity:.5; padding-left:0px;" data-75="opacity:1; padding-left:250px;">Things...</h1>
-              </div>
-            </div>
-            <div class="row">
-              <div class="large-10 large-offset-2 columns no-padding">
-                <h1 class="title-text" data-0="opacity:.3; padding-left:0px;" data-125="opacity:1; padding-left:450px;">That...</h1>
-              </div>
-            </div>
-            <div class="row">
-              <div class="large-9 large-offset-3 columns no-padding">
-                <h1 class="title-text" data-0="opacity:.1; padding-left:0px;" data-200="opacity:1; padding-left:550px;">Soar</h1>
-              </div>
-            </div>
-          </div> <!-- main image div -->
-        </div> <!-- large-12 column -->
-      </div> <!-- row no margin -->
-
-      <div class="row">
-        <div class="large-12 columns">
-          <h1 class="center-text section-title" data-0="opacity: 0" data-350="opacity: 1" data-650="opacity: 0">Projects</h1>
-        </div>
-      </div>
-      <hr />
-
-      <!-- oasis project -->
-      <div class="row">
-        <div class="large-5 medium-5 medium-push-7 columns">
-          <img src="img/Oasis-project.png" alt="Oasis">
-        </div>
-
-        <div class="large-7 medium-7 medium-pull-5 columns">
-          <p>Oasis Mind Body and Skin is a private business that provides massage and facial services. This site provides service information, pricing, availability, as well as direct email support.</p>
-          <p>This site was built with the foundation framework. I also uses JQuery form validator as well as a custom php form validator for email form. Site uses Media queries to create a fully responsive experience.</p>
-        </div>
-      </div>
-      <hr />
-
-      <!-- Barter project -->
-      <div class="row">
-        <div class="large-4 medium-4 columns">
-          <img src="img/Barter-image.png" alt="Barter">
-        </div>
-
-        <div class="large-8 medium-8 columns">
-          <a href="https://barter-hub.herokuapp.com" class="button">Live Site</a>
-          <a href="https://github.com/rimmesbe/Barter" class="button info">Source Code</a>
-          <p>Barter is a social network created for the purpose of trading talents. Two users make an agreement to trade their talents at a mutually agreeable time. "You teach me, I'll teach you." This app has a Ruby on Rails backend with a Angular JS front end. It also makes use of Amazon s3 databases for smooth streaming in app videos.</p>
-        </div>
-      </div>
-      <hr />
-
-      <!-- Recipe book project -->
-      <div class="row">
-        <div class="large-5 medium-5 medium-push-7 columns">
-          <img src="img/Recipe-image.png" alt="Recipe Book">
-        </div>
-
-        <div class="large-7 medium-7 medium-pull-5 columns">
-          <a href="https://the-recipe-book.herokuapp.com/" class="button">Live Site</a>
-          <a href="https://github.com/rimmesbe/RecipeBook" class="button info">Source Code</a>
-          <p>The Recipe Book is a site where friends and family can go to share their recipes. The restful api allows people to create a user account and started adding, deleting, and editing their recipes.</p>
-          <p>This site was built with Ruby on Rails. It uses the Bootstrap framework for the front end as well as some custom JQuery animations. AJAX is used on the recipe creation page.</p>
-        </div>
-      </div>
-      <hr />
-
-      <!-- about section -->
-      <div class="row">
-        <div class="large-4 medium-4 columns">
-          <img id="my-headshot" src="img/RyanImmesberger.jpg">
-        </div>
-
-        <div class="large-8 medium-8 columns">
-          <h1 class="center-text section-title">About</h1>
-          <p>I am a Web Developer and a life long learner who is always seeking to expand my knowledge base. I am a creative thinker and I like solving interesting problems. My focus languages are Ruby on Rails, Javascript, HTML, CSS with some SQL and Angular JS experience. I practice Object Oriented Design, Agile Development, Version Control with TDD experience.</p>
-          <p>-Ryan Immesberger</p>
-        </div>
-      </div>
-      <hr style="margin-bottom: 0em" />
-
-      <!-- footer -->
-      <div class="row no-margin">
-        <div class="large-12 medium-12 columns no-padding" id="footer-img-div">
-          <h1 class="center-text big-text" style="">Thanks for visiting</h1>
-          <div class="row top-padding">
-            <div class="large-5 medium-5 small-6 columns">
-              <ul class="float-right">
-                <li><h3><span data-tooltip aria-haspopup="true" class="has-tip" style="color:#008CBA;" title="RyanImmesberger@gmail.com">Email</span></h3></li>
-                <li><h3><a href="http://google.com/+RyanImmesberger">Google+</a></h3></li>
-              </ul>
-            </div>
-            <div class="large-5 medium-5 small-6 columns">
-              <ul class="float-left">
-                <li><h3><a href="http://www.linkedin.com/in/ryanimmesberger">Linkedin</a></h3></li>
-                <li><h3><a href="https://github.com/rimmesbe">Github</a></h3></li>
-                <li><h3><a href="http://twitter.com/rimmesbe">Twitter</a></h3></li>
-              </ul>
-            </div>
+            </a>
           </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <p class="center-text blue-text no-margin">Ryan Immesberger © 2016</p>
+
+          <div id="Minesweeper" class="project">
+            <div class="project-text">
+              <p>Mine Sweeper is back! even better, and in your browser</p>
+              <a class="project-link__SRC" href="https://github.com/rimmesbe/mine_sweeper">Source Code</a>
             </div>
+            <a class="project-link__LIVE" href="https://rimmesbe.github.io/mine_sweeper/">
+              <div class="project-img">
+                <img src="./resources/images/minesweeper-image.jpg" alt="Mine sweeper game, Mine sweeper landing page">
+              </div>
+            </a>
+          </div>
+
+          <div id="Barter" class="project">
+            <div class="project-text">
+              <p>Barter is a social network created for the purpose of trading talents. Two users make an agreement to trade their talents at a mutually agreeable time. "You teach me, I'll teach you." This app has a Ruby on Rails backend with a Angular JS front end. It also makes use of Amazon s3 databases for smooth streaming in app videos.
+              </p>
+              <a class="project-link__SRC" href="https://github.com/rimmesbe/Barter">Source Code</a>
+            </div>
+            <a class="project-link__LIVE" href="https://barter-hub.herokuapp.com/">
+              <div class="project-img">
+                <img src="./resources/images/Barter-image.png" alt="City Skyline, Barter landing page">
+              </div>
+            </a>
+          </div>
+
+          <div id="RecipeBook" class="project">
+            <div class="project-text">
+              <p>The Recipe Book is a site where friends and family can go to share their recipes. The restful api allows people to create a user account and started adding, deleting, and editing their recipes.
+              <br>
+              This site was built with Ruby on Rails. It uses the Bootstrap framework for the front end as well as some custom JQuery animations. AJAX is used on the recipe creation page.
+              </p>
+              <a class="project-link__SRC" href="https://github.com/rimmesbe/RecipeBook">Source Code</a>
+            </div>
+            <a class="project-link__LIVE" href="https://the-recipe-book.herokuapp.com/">
+              <div class="project-img">
+                <img src="./resources/images/Recipe-image.png" alt="Books, chicken, chef knife, Recipe book landing page">
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="About-section" role="region" aria-labelledby="About-Me-header">
+        <h2 id="About-Me-header" class="section-header">About Me</h2>
+
+        <div class="about">
+          <div class="about-text">
+            <p>I am a Web Developer and a life long learner who is always seeking to expand my knowledge base. I am a creative thinker and I like solving interesting problems. My focus languages are Ruby on Rails, Javascript, HTML, CSS with some SQL and Angular JS experience. I practice Object Oriented Design, Agile Development, Version Control with TDD experience.
+            </p>
+            <p>-Ryan Immesberger</p>
+          </div>
+          <div class="about-img">
+            <img src="./resources/images/RyanImmesberger.jpg" alt="Profile picture of Ryan Immesberger">
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
+    <footer id="Contact-section" role="region" aria-labelledby="Contact-header">
+      <h2 id="Contact-header" class="contact-header">Contact</h2>
+
+      <nav class="contact-nav">
+        <a class="contact-link" href="https://plus.google.com/+RyanImmesberger">Google+</a>
+        <a class="contact-link" href="#email">Email</a>
+        <a class="contact-link" href="https://twitter.com/rimmesbe">Twitter</a>
+        <a class="contact-link" href="https://github.com/rimmesbe">Github</a>
+        <a class="contact-link" href="https://www.linkedin.com/in/ryanimmesberger/">LinkedIn</a>
+        <a class="contact-link" href="./resources/documents/Ryan_Immesberger_resume_pdf.pdf">Resume</a>
+      </nav>
+
+      <h6 class="copyright">Ryan Immesberger © 2018</h6>
+    </footer>
+
+    <script src="./resources/javascript/smooth-scroll-master/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="./resources/javascript/main.js"></script>
     <script>
-      $(document).foundation();
-    </script>
-    <script type="text/javascript" src="js/skrollr.min.js"></script>
-    <script type="text/javascript">
-      if (screen.width > 500){
-        var s = skrollr.init();
-      }
+    	var scroll = new SmoothScroll('a[href*="#"]', {
+        offset: 50
+      });
     </script>
   </body>
 </html>
