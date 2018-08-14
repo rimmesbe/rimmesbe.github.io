@@ -238,7 +238,7 @@ main {
 
 #Minesweeper {
   grid-area: minesweeper;
-  background: url("../images/minesweeper-image.jpg") no-repeat center center;
+  background: url("../images/Minesweeper-image.png") no-repeat center 55%;
   background-size: 100%;
 }
 
