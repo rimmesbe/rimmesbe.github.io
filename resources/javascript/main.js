@@ -62,7 +62,6 @@ function shadow(e) {
 
   const xWalk = Math.round((x / width * walk) - (walk / 2));
   const yWalk = Math.round((y / height * walk) - (walk / 2));
-  console.log(xWalk, yWalk);
 
   bannerText.forEach(text => text.style.textShadow = `
     ${xWalk}px ${yWalk}px 0 #116bc5,
