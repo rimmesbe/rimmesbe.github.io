@@ -43,3 +43,33 @@ function attachEmail(e) {
 
 const email = document.querySelector(".contact-link[href='#email']");
 email.addEventListener("click", attachEmail);
+
+
+// --------------------text shadow-----------------------
+
+const banner = document.querySelector('.banner');
+const bannerText = banner.querySelectorAll('h1');
+const walk = 20;
+
+function shadow(e) {
+  const {offsetWidth: width, offsetHeight: height } = banner;
+  let {offsetX: x, offsetY: y } = e;
+
+  if(this !== e.target) {
+    x = x + e.target.offsetLeft;
+    y = y + e.target.offsetTop;
+  }
+
+  const xWalk = Math.round((x / width * walk) - (walk / 2));
+  const yWalk = Math.round((y / height * walk) - (walk / 2));
+  console.log(xWalk, yWalk);
+
+  bannerText.forEach(text => text.style.textShadow = `
+    ${xWalk}px ${yWalk}px 0 #116bc5,
+    ${xWalk + yWalk}px ${yWalk + xWalk}px 0 #329dd8,
+    ${xWalk + (yWalk * 1.5)}px ${yWalk + (xWalk * 1.5)}px 0 #f95252
+    `
+  );
+}
+
+banner.addEventListener('mousemove', shadow);
