@@ -1,4 +1,8 @@
-/* -----TODO: create color variables------ */
+:root {
+  --red-sunset: #f95252;
+  --dark-blue: #116bc5;
+  --light-blue: #329dd8;
+}
 
 /* site stylesheet */
 html {
@@ -36,7 +40,7 @@ img {
 .banner-header {
   font-size: 5rem;
   color: white;
-  text-shadow: 2px 2px #349EB6;
+  text-shadow: 2px 2px var(--light-blue);
 }
 
 .banner-header:nth-child(1) {
@@ -91,7 +95,6 @@ img {
 header {
   min-height: 10vh;
   width: 100%;
-  background-color: #116bc5;
   z-index: 1;
 }
 
@@ -120,7 +123,7 @@ header nav {
   text-decoration: none;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(#116bc5, #f95252, #329dd8);
+  background: linear-gradient(var(--dark-blue), var(--red-sunset), var(--light-blue));
   background-size:1px 200px;
   transition: all .5s;
 }
@@ -132,15 +135,14 @@ header nav {
 main {
   display: grid;
   min-height: 500px;
-  /* padding-top: 16px; */
 }
 
 .section-header {
   font-family: 'Varela Round', sans-serif;
-  color: #329dd8;
+  color: var(--light-blue);
   font-size: 2rem;
   text-align: center;
-  text-shadow: 2px 2px #116bc5;
+  text-shadow: 2px 2px var(--dark-blue);
 }
 
 /* -----------------------Projects----------------------- */
@@ -196,7 +198,7 @@ main {
   display: flex;
   flex-direction: column;
   text-align: left;
-  background: #116bc5;
+  background: var(--dark-blue);
   border-top: 1px solid black;
   padding: 20px;
 }
@@ -224,11 +226,11 @@ main {
   width: 10rem;
   text-align: center;
   padding: 10px;
-  background: #329dd9;
+  background: var(--light-blue);
 }
 
 .project-link__SRC:hover, .project-link__SRC:focus {
-  background: #f95252;
+  background: var(--red-sunset);
   border: 1px solid white;
   color: white;
 }
@@ -262,7 +264,7 @@ main {
   .projects {
     width: 100%;
     grid-gap: 10px;
-    background: #f95252;
+    background: var(--red-sunset);
   }
 
   .project {
@@ -278,9 +280,9 @@ main {
     align-items: center;
   }
 
-  .project > *:first-child { transform: none; }
+  .js .project > *:first-child { transform: none; }
   .project.open-active > *:first-child { transform: none; }
-  .project > *:last-child { transform: none; }
+  .js .project > *:last-child { transform: none; }
   .project.open-active > *:last-child { transform: none; }
 
 }
@@ -330,7 +332,7 @@ footer {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
-  background: linear-gradient(#116bc5 35%, #f95252 50%, #329dd8 65%);
+  background: linear-gradient(var(--dark-blue) 35%, var(--red-sunset) 50%, var(--light-blue) 65%);
 }
 
 .contact-header {
@@ -359,7 +361,7 @@ footer {
   text-shadow: 1px 1px #504b47;
   width: 100%;
   padding: 2rem;
-  background: linear-gradient(#f95252, #116bc5, #329dd8, #f95252);
+  background: linear-gradient(var(--red-sunset), var(--dark-blue), var(--light-blue), var(--red-sunset));
   text-decoration: none;
   transition: color .7s;
 }
@@ -367,9 +369,9 @@ footer {
 .contact-link:hover, .contact-link:focus {
   color: white;
   text-decoration: underline;
-  border-top: 1px solid #329dd8;
-  border-bottom: 1px solid #116bc5;
-  background: linear-gradient(#116bc5 20%, #f95252 50%, #329dd8 80%);
+  border-top: 1px solid var(--light-blue);
+  border-bottom: 1px solid var(--dark-blue);
+  background: linear-gradient(var(--dark-blue) 20%, var(--red-sunset) 50%, var(--light-blue) 80%);
 }
 
 .contact-link:first-child { border-radius: 90% 0 0 90%; }
@@ -388,7 +390,7 @@ footer {
     height: auto;
     align-items: initial;
     grid-template-rows: auto;
-    background: linear-gradient(to right, #116bc5 35%, #f95252 50%, #329dd8 65%);
+    background: linear-gradient(to right, var(--dark-blue) 35%, var(--red-sunset) 50%, var(--light-blue) 65%);
   }
 
   .contact-nav {
@@ -396,14 +398,14 @@ footer {
   }
 
   .contact-link {
-    background: linear-gradient(to right, #f95252, #116bc5, #329dd8, #f95252);
+    background: linear-gradient(to right, var(--red-sunset), var(--dark-blue), var(--light-blue), var(--red-sunset));
   }
 
   .contact-link:hover, .contact-link:focus {
-    background: linear-gradient(to right, #116bc5 20%, #f95252 50%, #329dd8 80%);
+    background: linear-gradient(to right, var(--dark-blue) 20%, var(--red-sunset) 50%, var(--light-blue) 80%);
     border: none;
-    border-left: 1px solid #329dd8;
-    border-right: 1px solid #116bc5;
+    border-left: 1px solid var(--light-blue);
+    border-right: 1px solid var(--dark-blue);
   }
 
   .contact-link:first-child { border-radius: initial; }
