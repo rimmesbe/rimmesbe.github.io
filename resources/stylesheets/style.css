@@ -6,6 +6,7 @@
 
 /* site stylesheet */
 html {
+  font-size: 16px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -58,6 +59,15 @@ img {
 .banner-header:nth-child(4) {
   grid-column: 4/5;
   grid-row: 4/5;
+}
+
+@media only screen and (max-width: 1050px) and (min-width: 601px) {
+  .banner { background-size: cover; }
+  .banner-header { font-size: 3.5rem; }
+}
+
+@media only screen and (max-width: 750px) and (min-width: 601px) {
+  .banner > .banner-header { grid-column: 2/3; }
 }
 
 @media only screen and (max-width: 600px) {
@@ -124,7 +134,7 @@ header nav {
   justify-content: center;
   align-items: center;
   background: linear-gradient(var(--dark-blue), var(--red-sunset), var(--light-blue));
-  background-size:1px 200px;
+  background-size: 100px 200px;
   transition: all .5s;
 }
 
@@ -176,7 +186,7 @@ main {
 
 .project.open {
   height: auto;
-  max-height: 15rem;
+  max-height: 25rem;
   opacity: 1;
 }
 
@@ -382,6 +392,13 @@ footer {
   margin: 0;
   padding: 10px;
   color: white;
+}
+
+@media only screen and (max-width: 850px) and (min-width: 601px) {
+  .contact-link {
+    font-size: 1rem;
+    padding: 1rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
