@@ -12,9 +12,10 @@ function toggleActive(e) {
   }
 }
 
-projects.forEach(project => project.addEventListener("click", toggleOpen));
-projects.forEach(project => project.addEventListener("transitionend", toggleActive));
-
+if (window.matchMedia("(min-width: 601px)").matches) {
+  projects.forEach(project => project.addEventListener("click", toggleOpen));
+  projects.forEach(project => project.addEventListener("transitionend", toggleActive));
+}
 
 // -----------------sticky header-------------------
 
