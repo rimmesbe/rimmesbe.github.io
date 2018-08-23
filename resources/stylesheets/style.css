@@ -182,9 +182,9 @@ main {
   direction: rtl;
 } */
 
-.project > *:first-child { transform: translateX(-100%); }
+.js .project > *:first-child { transform: translateX(-100%); }
 .project.open-active > *:first-child { transform: translateX(0); }
-.project > *:last-child { transform: translateX(100%); }
+.js .project > *:last-child { transform: translateX(100%); }
 .project.open-active > *:last-child { transform: translateX(0); }
 
 .project > * {
